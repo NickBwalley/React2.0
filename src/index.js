@@ -1,12 +1,17 @@
-import React from "react";
-import ReactDOM from "react-dom";
+import React from 'react';
+import ReactDOM from 'react-dom';
 
 const App = () => {
   return (
     <div>
-      <h4>Hello World This is my second reactjs app!</h4>
+      <h4>Hello World</h4>
+      <input type="text" name="" id="" />
     </div>
   );
 };
 
-ReactDOM.render(<App />, document.getElementById("root"));
+// const App2 = () => {
+//   return React.createElement("h1", {}, React.createElement('h1', {}, "hello world");
+// };
+
+ReactDOM.render(<App />, document.getElementById('root'));
