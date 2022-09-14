@@ -1,7 +1,12 @@
+import React from "react";
 import ReactDOM from "react-dom";
 
-const Greeting = () => {
-  return <h4>The Awesome Kong!</h4>;
+const App = () => {
+  return (
+    <div>
+      <h4>Hello World This is my second reactjs app!</h4>
+    </div>
+  );
 };
 
-ReactDOM.render(<Greeting />, document.getElementById("root"));
+ReactDOM.render(<App />, document.getElementById("root"));
