@@ -9,38 +9,29 @@ const BookList = () => {
     <section className="booklist">
       <Book />
       <Book />
-      <Book />
-      <Book />
-      <Book />
     </section>
   );
 };
 
+const author = 'Amelia Hepworth';
 const Book = () => {
+  const title = 'I love you to the moon and back';
+
   return (
     <article className="book">
-      <Image />
-      <Title />
-      <Author />
+      <img
+        src="https://images-na.ssl-images-amazon.com/images/W/WEBP_402378-T2/images/I/51p2SDOCV9L._SX218_BO1,204,203,200_QL40_FMwebp_.jpg"
+        alt=""
+      ></img>
+      <h1>{title}</h1>
+      <h4>{author}</h4>
+      {/* <p>{let x = 6}</p> */}
     </article>
   );
 };
 
-const Image = () => (
-  <img
-    src="https://images-na.ssl-images-amazon.com/images/W/WEBP_402378-T2/images/I/51p2SDOCV9L._SX218_BO1,204,203,200_QL40_FMwebp_.jpg"
-    alt=""
-  ></img>
-);
-
-const Title = () => <h1>I love you to the moon and back</h1>;
-const Author = () => (
-  <h4 style={{ color: '#617d98', fontSize: '0.75rem', marginTop: '0.25rem' }}>
-    Amelia Hepworth
-  </h4> // inline css are stronger than external css.
-);
 // const App2 = () => {
 //   return React.createElement("h1", {}, React.createElement('h1', {}, "hello world");
 // };
-
+// style={{ color: '#617d98', fontSize: '0.75rem', marginTop: '0.25rem' }}
 ReactDOM.render(<BookList />, document.getElementById('root'));
