@@ -12,30 +12,31 @@ const books = [
   },
 
   {
-    img: 'https://m.media-amazon.com/images/W/WEBP_402378-T2/images/I/51e1S2nD9IL._AC_UL320_.jpg',
-    title: 'the Road to React',
-    author: 'Robin Wieruch',
+    img: 'https://m.media-amazon.com/images/W/WEBP_402378-T2/images/I/71aLultW5EL._AC_UY218_.jpg',
+    title: 'Our Class is a Family',
+    author: 'Shannon Olsen',
   },
 
   {
-    img: 'https://images-na.ssl-images-amazon.com/images/W/WEBP_402378-T2/images/I/91HHxxtA1wL._AC_UL116_SR116,116_.jpg',
-    title: 'The wonderful Things You Will Be!',
-    author: 'Emily Winfield Martin',
+    img: 'https://m.media-amazon.com/images/W/WEBP_402378-T2/images/I/71gGPRRlyTL._AC_UY218_.jpg',
+    title: 'The Vanishing Half: A Novel',
+    author: 'Emily Winfield MartinBrit Bennett',
   },
 ];
 
-const names = ['John', 'Solo', 'Nick'];
-const newNames = names.map((name) => {
-  return <h1>{name}</h1>;
-});
-console.log(newNames);
 const BookList = () => {
-  return <section className="booklist">{newNames}</section>;
+  return (
+    <section className="booklist">
+      {books.map((book) => {
+        return <Book book={book}></Book>;
+      })}
+    </section>
+  );
 };
 
 const Book = (props) => {
-  const { img, title, author } = props;
-  console.log(props);
+  const { img, title, author } = props.book;
+
   return (
     <article className="book">
       <img src={img} alt="" />
