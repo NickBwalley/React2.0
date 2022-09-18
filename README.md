@@ -10,5 +10,4 @@
 - Props Children
 - Key Prop and Spread Operator
 - Import and Export Statements
-<hr/>
 ## React Advanced
