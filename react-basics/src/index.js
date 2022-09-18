@@ -3,10 +3,9 @@ import ReactDOM from 'react-dom';
 
 //CSS
 import './index.css';
-// named export
-import { books } from './Books';
-//default export
-import Book from './Book';
+
+import { books } from './Books'; // named export
+import Book from './Book'; //default export
 
 const BookList = () => {
   return (
