@@ -1,6 +1,5 @@
 # Get Started with ReactJS
 ## React Basics
-<hr/>
 - Set up Boiler Plates with npm install && npm start 
 - install create-react-app
 - JSX Rules
