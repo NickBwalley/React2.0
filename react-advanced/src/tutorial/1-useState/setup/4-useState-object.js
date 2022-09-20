@@ -6,6 +6,8 @@ const UseStateObject = () => {
     age: 24,
     message: 'I love React coding',
   });
+  // you can also create multiple state values for each name, age and message and setUseState for all as you update them
+  // but we dicided to use this spreadoperator method to save on time and be more readable....
 
   const changeMessage = () => {
     setPerson({ ...person, message: 'Coding for life' });
