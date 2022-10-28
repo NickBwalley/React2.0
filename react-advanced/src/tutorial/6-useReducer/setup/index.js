@@ -6,13 +6,12 @@ const reducer = (state, action) => {}
 const defaultState = {
   people: [],
   isModalOpen: false,
-  modalContent: 'hello world',
+  modalContent: '',
 }
 const Index = () => {
   const [name, setName] = useState('')
   const [state, dispatch] = useReducer(reducer, defaultState)
-  const [people, setPeople] = useState(data)
-  const [showModal, setShowModal] = useState(false)
+
   const handleSubmit = (e) => {
     e.preventDefault()
     if (name) {
